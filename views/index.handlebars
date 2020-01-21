@@ -1,0 +1,52 @@
+<a href="https://fontmeme.com/songs-for-the-deaf-font/"><img src="https://fontmeme.com/permalink/200121/5b4636aaf1d34f0d47742ac04616f1bd.png" alt="songs-for-the-deaf-font" border="0"></a>
+<br>
+<br>
+
+<div class="container-fluid" style="text-align: center;">
+  <div class="row">
+    <div class="col-4" style="align-content:right">
+      <a href="https://fontmeme.com/songs-for-the-deaf-font/"><img src="https://fontmeme.com/permalink/200121/699cc8235081bf59d86f54bc11ab9cda.png" alt="songs-for-the-deaf-font" border="0"></a>
+      <br>
+      <div class="d-flex justify-content-center">
+        <ul>
+          {{#each burgers}}
+          {{#unless eaten}}
+          {{> burgers/burger-block eaten=true}}
+          {{/unless}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+
+       <div class="col-4">
+            <img src="https://vignette.wikia.nocookie.net/secretmenu/images/8/8b/In-n-out-animal-style-burge.jpg/revision/latest/scale-to-width-down/340?cb=20141029231239"
+                alt="cheeseburger" class="img-fluid pt-5">
+        </div>
+
+    <div class="col-4">
+
+      <a href="https://fontmeme.com/songs-for-the-deaf-font/"><img src="https://fontmeme.com/permalink/200121/54f63558b39874ecb1852a323ca695e9.png" alt="songs-for-the-deaf-font" border="0"></a>
+      <br>
+      <div class="d-flex justify-content-center">
+        <ul>
+          {{#each burgers}}
+          {{#if eaten}}
+          {{> burgers/burger-block eaten=false}}
+          {{/if}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<h2 style="clear: left;"><a href="https://fontmeme.com/songs-for-the-deaf-font/"><img src="https://fontmeme.com/permalink/200121/baba5cf3b247dd68ef37975a2b27903c.png" alt="songs-for-the-deaf-font" border="0"></a></h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <input type="text" id="ca" size="30" name="name">
+  </div>
+
+  <button class="add" type="submit">Add Burger</button>
+</form>

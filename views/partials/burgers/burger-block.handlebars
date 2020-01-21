@@ -1,0 +1,10 @@
+
+<li>
+<input type="text" style="height:40px; text-align:center" rows="5" size="30" readonly value="{{name}}">
+
+{{#if eaten}}
+<button class="change-eaten" data-id="{{id}}" data-beenEaten="{{eaten}}">
+	Devour it!
+</button>
+{{/if}}
+</li>
